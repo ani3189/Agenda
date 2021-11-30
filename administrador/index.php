@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ($_POST){
-    if(($_POST['usuario']=="aladeriva")&&($_POST['contrasena']=="sistema")){ // cambiar con consulta a la bd para usuarios ver aprox 2:30:00 de https://www.youtube.com/watch?v=IZHBMwGIAoI para ver cuáles son los llamados
+    if(($_POST['usuario']=="aladeriva")&&($_POST['contrasena']=="sistema")){ // cambiar con consulta a la bd para usuarios 
         $_SESSION['usuario']="ok";
         $_SESSION['nombreUsuario']="aladeriva";
         header('Location:inicio.php'); 
